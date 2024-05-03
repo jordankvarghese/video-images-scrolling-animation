@@ -32,7 +32,7 @@ export default {
 
 
 
-TO CREATE IMAGES FROM VIDEO
+TO CREATE IMAGE FRAMES FROM VIDEO SOURCE
 
 1. Download FFmpeg
 2. Extract compressed file

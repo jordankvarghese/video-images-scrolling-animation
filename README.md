@@ -28,3 +28,22 @@ export default {
 - Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
 - Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
 - Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+
+
+
+TO CREATE IMAGES FROM VIDEO
+
+1. Download FFmpeg
+2. Extract compressed file
+3. Move to C or desired directory( C recommended)
+4. Copy bin path from extracted folder
+5. Add the path in environment variables
+6. Check ffmpeg in terminal
+7. If its working do below step
+8. Open Terminal from video(that you need to convert to frames of images) folder and run below command
+
+   ffmpeg -i video_name.mp4 -vf scale=1000:-1 -vcodec libwebp -compression_level 1 -qscale 80 %d.webp
+
+
+
